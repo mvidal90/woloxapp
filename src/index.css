@@ -1,13 +1,230 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face{
+  font-family: 'Monserrat';
+  src: url('./Fonts/Montserrat/Montserrat-SemiBold.ttf');
+  font-style: bold;
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+  font-family: 'Monserrat';
+  src: url('./Fonts/Montserrat/Montserrat-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Monserrat';
+  margin: 0;
+}
+
+a{
+  color: black;
+}
+
+button{
+  color: white;
+  font-family: 'Monserrat';
+  font-weight: bold;
+  height: 40px;
+  border-radius: 30px;
+  width: 170px;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+hr{
+  border: 0.1em solid #EDF0F5;
+  box-shadow: 10px 0px 7px #EDF0F5;
+  margin-left: 10%;
+}
+
+footer{
+  align-items: center;
+  align-content: center;
+  background-image: url('./Backgrounds/Bg_Footer@3x.png');
+  background-size: cover;
+  text-align: center;
+}
+
+nav{
+  position: fixed;
+  z-index: 2;
+}
+
+#Inicio{
+  background-image: url('./Backgrounds/Bg_Header@3x.png');
+  background-size: cover;
+  padding: 7% 0;
+}
+
+.margin-items{
+  margin: 5%;
+}
+
+.benefits-title{
+  font-size: 25px;
+  padding: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+.blue{
+  color: #2AA7DF;
+}
+
+.blueWolox{
+  color: #00A9E5;
+}
+
+.btn-followus{
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid  #00A9E5;
+}
+  .btn-followus:hover{
+    background-color: #00A9E5;
+  }
+
+.btn-footer{
+  background-color: #2AA7DF;
+  border: 2px solid  #2AA7DF;
+  margin-bottom: 15%;
+  align-items: center;
+}
+  .btn-footer:hover{
+    background-color: transparent;
+    color: #2AA7DF;
+  }
+
+.btn-login{
+  background-color: transparent;
+  border: 1px solid  #2AA7DF;
+  color: #2AA7DF;
+  height: 30px;
+  border-radius: 30px;
+  width: 150px;
+}
+  .btn-login:hover{
+    background-color: #2AA7DF;
+    color: white;
+  }
+
+
+.container {
+  align-content: center;
+  align-items: center;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.col-2, .col-5, .col-6, .col-7 {
+  position: relative;
+  width: 100%;
+}
+
+.col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+.col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.green{
+  color: #A3CC39;
+}
+
+.greenWolox{
+  color: #97CF00;
+}
+
+.hero-img{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  height: 100%;
+  padding: 5%;
+  transform: scaleX(-1);
+}
+
+.img-container{
+  height: 400px;
+  margin-bottom: 10%;
+}
+
+.items{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo{
+  height: 33%;
+  margin: 2%;
+}
+
+.main-title{
+  padding: 12% 30% 12% 10%;
+}
+
+.menu{
+  display: flex;
+  right: 0;
+  padding: 2% 0 0 7%;  
+}
+
+.menu-item{
+  text-decoration: none;
+  padding: 2% 4%;
+}
+ .menu-item:hover,.menu-item:active{
+  text-decoration: underline;
+ }
+
+.wlx1{
+  background-image: url('./Backgrounds/img_woloxer@3x.png');
+  background-size: cover;
+  padding: 5% 0;
+  text-align: center;
+}
+
+.wlx2{
+  align-items: center;
+  background-color: #F2F5FA;
+  padding: 5% 0%;
+  text-align: center;
+}
+
+.wolox-footer{
+  margin-bottom: 7%;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
 }
