@@ -49,6 +49,50 @@ hr{
   margin-left: 10%;
 }
 
+
+input, label, select{
+  border-radius: 30px;
+  font-size: small;
+  margin: 2%;
+  padding: 2%;
+  width: 94%;
+}
+
+input, select{
+  border: 1px solid grey;
+}
+
+input{
+  width: 90%;
+}
+
+input[type=checkbox]{
+  width: auto;
+  margin: 3%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+select{
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url('./icons/arrow.png');
+  background-repeat: no-repeat, repeat;
+  background-position: right .7em top 50%, 0 0;
+  background-size: 1.5em auto, 100%;
+}
+
+option{
+  margin: 0 5%;
+}
+
 footer{
   align-items: center;
   align-content: center;
@@ -62,7 +106,7 @@ nav{
   z-index: 2;
 }
 
-#Inicio{
+#Inicio, .bg-form{
   background-image: url('./Backgrounds/Bg_Header@3x.png');
   background-size: cover;
   padding: 7% 0;
@@ -96,16 +140,29 @@ nav{
     background-color: #00A9E5;
   }
 
-.btn-footer{
+.btn-footer,.btn-form{
   background-color: #2AA7DF;
   border: 2px solid  #2AA7DF;
   margin-bottom: 15%;
   align-items: center;
 }
-  .btn-footer:hover{
+  .btn-footer:hover, .btn-form:hover{
     background-color: transparent;
     color: #2AA7DF;
   }
+
+.btn-form{
+  margin: 5% 0 2% 2%;
+  width: 220px;
+}
+
+.btn-disabled{
+  background-color: grey;
+  border: 2px solid  grey;
+  margin-bottom: 15%;
+  margin: 5% 0 2% 2%;
+  width: 220px;
+}
 
 .btn-login{
   background-color: transparent;
@@ -153,6 +210,18 @@ nav{
 .col-7 {
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
+}
+
+.danger{
+  color: red;
+  padding-left: 2%;
+}
+
+.formbox{
+  background-color: white;
+  border: 1px solid grey;
+  border-radius: 30px;
+  padding: 2%;
 }
 
 .green{

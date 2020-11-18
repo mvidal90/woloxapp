@@ -1,18 +1,15 @@
 import React from 'react';
-import { Beneficios } from './Beneficios.js';
-import { Footer } from './Footer';
-import { Inicio } from './Inicio';
 import { NavBar } from './NavBar';
-import { Woloxers } from './Woloxers';
+import { Page } from './Page.js';
+import { Form } from './Form.js';
+
 
 export const WoloxApp = () => {
     return (
         <>
             <NavBar />
-            <Inicio />
-            <Woloxers />
-            <Beneficios />
-            <Footer />
+            {/* <Page /> */}
+            <Form />
         </>
     )
 }
