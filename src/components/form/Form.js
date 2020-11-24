@@ -31,19 +31,19 @@ export const Form = ({ setHome, setMsg }) => {
         const expr = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
         const exprPass = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
-        if (name.length>30) {
+        if (name.length>30 || lastname.length === 0) {
             e.preventDefault();
-            setError({ state: true, error:'Tu nombre no puede superar los 30 caracteres.'})        
-        } else if (lastname.length>30) {
+            setError({ state: true, error:'Debes compretar tu nombre, con no más de 30 caracteres.'})        
+        } else if (lastname.length>30 || lastname.length === 0) {
             e.preventDefault();
-            setError({ state: true, error:'Tu apellido no puede superar los 30 caracteres.'})        
+            setError({ state: true, error:'Debes compretar tu apellido, con no más de 30 caracteres.'})        
         } else if (!expr.test(email)) {
             e.preventDefault();
-            setError({ state: true, error:'Tu email no tiene un formato válido.'})        
+            setError({ state: true, error:'Debes completar tu email, con un formato válido.'})        
         } else if (phone.length > 10) {
             e.preventDefault();
-            setError({ state: true, error:'Tu teléfono no puede tener más de 10 caracteres.'})
-        } else if (password < 6) {
+            setError({ state: true, error:'Debes completar tu teléfono, con no más de 10 caracteres.'})
+        } else if (password.length < 6) {
             e.preventDefault();
             setError({ state: true, error:'Tu contraseña debe tener como mínimo 6 dígitos.'})
         } else if (!exprPass.test(password)) {
