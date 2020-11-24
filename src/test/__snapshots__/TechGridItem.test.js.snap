@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con <TechGridItem /> Debe mostrarse correctamente 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="logos-container"
+  >
+    <img
+      className="img-size"
+    />
+  </div>
+  <div
+    className="data-container"
+  >
+    <h4>
+       ( 
+       )
+    </h4>
+    <p>
+      <strong>
+        Autor: 
+      </strong>
+       
+       
+    </p>
+    <p>
+      <strong>
+        Licencia: 
+      </strong>
+       
+       
+    </p>
+    <p>
+      <strong>
+        Lenguaje: 
+      </strong>
+       
+       
+    </p>
+    <p>
+      <strong>
+        Tipo: 
+      </strong>
+       
+       
+    </p>
+  </div>
+  <form>
+    <button
+      className="btn-tch"
+      onClick={[Function]}
+    >
+      Agregar a Favoritos
+    </button>
+  </form>
+</div>
+`;

@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from '../Img/Ic_ilustra_Hero@3x.png';
+import hero from '../../Img/Ic_ilustra_Hero@3x.png';
 
 export const Inicio = () => {
     return (
@@ -16,7 +16,7 @@ export const Inicio = () => {
                     </div>
                     <div className = "col-5">
                         <div className = "img-container">
-                            <img src = { hero } className = "hero-img" alt = "Imagen Hero, representa el trabajo en equipo y constante inovación tecnológica"/> 
+                            <img src = { hero } className = "hero-img animation-right" alt = "Imagen Hero, representa el trabajo en equipo y constante inovación tecnológica"/> 
                         </div>
                     </div>
                 </div>

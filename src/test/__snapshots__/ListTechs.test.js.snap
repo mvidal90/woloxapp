@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con <ListTechs /> Debe mostrarse correctamente 1`] = `
+<section
+  id="Techs"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <h2>
+         WoloxApp 
+      </h2>
+      <ol>
+        <TechGrid
+          stg={null}
+        />
+      </ol>
+    </div>
+  </div>
+</section>
+`;

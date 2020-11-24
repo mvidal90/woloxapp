@@ -1,299 +1,529 @@
 @font-face{
   font-family: 'Monserrat';
-  src: url('./Fonts/Montserrat/Montserrat-SemiBold.ttf');
-  font-style: bold;
-  font-weight: bold;
+  src: url('./Fonts/Montserrat/Montserrat-Regular.ttf');
 }
 
 @font-face{
-  font-family: 'Monserrat';
-  src: url('./Fonts/Montserrat/Montserrat-Regular.ttf');
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'MonserratSB';
+  src: url('./Fonts/Montserrat/Montserrat-SemiBold.ttf');
 }
 
-
-html {
-  box-sizing: border-box;
+@font-face{
+  font-family: 'MonserratBold';
+  src: url('./Fonts/Montserrat/Montserrat-Bold.ttf');
 }
 
-body{
-  font-family: 'Monserrat';
-  margin: 0;
+.animation-right{
+  animation-duration: 1s;
+  animation-name: slidein-right;
 }
 
-a{
-  color: black;
-}
-
-button{
-  color: white;
-  font-family: 'Monserrat';
-  font-weight: bold;
-  height: 40px;
-  border-radius: 30px;
-  width: 170px;
-}
-
-h2{
-  font-size: 40px;
-}
-
-h3{
-  font-size: 25px;
-}
-
-hr{
-  border: 0.1em solid #EDF0F5;
-  box-shadow: 10px 0px 7px #EDF0F5;
-  margin-left: 10%;
-}
-
-
-input, label, select{
-  border-radius: 30px;
-  font-size: small;
-  margin: 2%;
-  padding: 2%;
-  width: 94%;
-}
-
-input, select{
-  border: 1px solid grey;
-}
-
-input{
-  width: 90%;
-}
-
-input[type=checkbox]{
-  width: auto;
-  margin: 3%;
-}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
-input[type=number] { -moz-appearance:textfield; }
-
-select{
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  background-image: url('./icons/arrow.png');
-  background-repeat: no-repeat, repeat;
-  background-position: right .7em top 50%, 0 0;
-  background-size: 1.5em auto, 100%;
-}
-
-option{
-  margin: 0 5%;
-}
-
-footer{
-  align-items: center;
-  align-content: center;
-  background-image: url('./Backgrounds/Bg_Footer@3x.png');
-  background-size: cover;
-  text-align: center;
-}
-
-nav{
-  position: fixed;
-  z-index: 2;
-}
-
-#Inicio, .bg-form{
-  background-image: url('./Backgrounds/Bg_Header@3x.png');
-  background-size: cover;
-  padding: 7% 0;
-}
-
-.margin-items{
-  margin: 5%;
-}
-
-.benefits-title{
-  font-size: 25px;
-  padding: 5%;
-  text-align: center;
-  width: 100%;
-}
-
-.blue{
-  color: #2AA7DF;
-}
-
-.blueWolox{
-  color: #00A9E5;
-}
-
-.btn-followus{
-  font-weight: bold;
-  background-color: transparent;
-  border: 2px solid  #00A9E5;
-}
-  .btn-followus:hover{
-    background-color: #00A9E5;
+@keyframes slidein-right {
+  from {
+    margin-left: 100%;
   }
 
-.btn-footer,.btn-form{
-  background-color: #2AA7DF;
-  border: 2px solid  #2AA7DF;
-  margin-bottom: 15%;
-  align-items: center;
+  to {
+    margin-left: 0%;
+  }
 }
-  .btn-footer:hover, .btn-form:hover{
-    background-color: transparent;
+
+.fadeIn{
+  animation-duration: 3s;
+  animation-name: fadein;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media(min-width: 300px){
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  body{
+    font-family: 'Monserrat';
+    margin: 0;
+  }
+  
+  a{
+    font-family: 'MonserratSB';
+    color: black;
+  }
+  
+  button{
+    color: white;
+    font-family: 'Monserrat';
+    font-weight: bold;
+    height: 40px;
+    border-radius: 30px;
+    width: 170px;
+  }
+  
+  h2{
+    font-size: 40px;
+  }
+  
+  h3{
+    font-size: 25px;
+  }
+
+  h4{
+    margin: 1% 2% 0 0;
+  }
+  
+  hr{
+    border: 0.1em solid #EDF0F5;
+    box-shadow: 10px 0px 7px #EDF0F5;
+    margin: 5%;
+  }
+  
+  
+  input, label, select{
+    border-radius: 30px;
+    font-size: small;
+    margin: 2%;
+    padding: 2%;
+    width: 94%;
+  }
+  
+  input, select{
+    border: 1px solid grey;
+  }
+  
+  input{
+    width: 90%;
+  }
+  
+  input[type=checkbox]{
+    width: auto;
+    margin: 3%;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  input[type=number] { -moz-appearance:textfield; }
+  
+  select{
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('./icons/arrow.png');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: 1.5em auto, 100%;
+  }
+
+  fieldset {
+    border: none;
+    padding: 5% 0;
+  }
+
+  legend {
+    font-weight: 600;
+  }
+
+  #expDesc {
+    font-size: small;
+    margin-left: 2%;
+  }
+  
+  footer{
+    align-items: center;
+    align-content: center;
+    background-image: url('./Backgrounds/Bg_Footer@3x.png');
+    background-size: cover;
+    text-align: center;
+  }
+  
+  nav{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+  }
+
+  ul{
+    display: flex;
+    list-style: none;
+    margin: 0 15%;
+  }
+
+  li{
+    margin: auto 5%;
+    text-align: right;
+  }
+
+  strong{
+    font-family: MonserratBold;
+  }
+  
+  #Inicio, #Techs, .bg-form{
+    background-image: url('./Backgrounds/Bg_Header@3x.png');
+    background-size: cover;
+    padding: 7% 0;
+  }
+
+  .abs{
+    position: absolute;
+  }
+  
+  .benefits-title{
+    font-size: 25px;
+    padding: 5% 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .blue{
     color: #2AA7DF;
   }
-
-.btn-form{
-  margin: 5% 0 2% 2%;
-  width: 220px;
-}
-
-.btn-disabled{
-  background-color: grey;
-  border: 2px solid  grey;
-  margin-bottom: 15%;
-  margin: 5% 0 2% 2%;
-  width: 220px;
-}
-
-.btn-login{
-  background-color: transparent;
-  border: 1px solid  #2AA7DF;
-  color: #2AA7DF;
-  height: 30px;
-  border-radius: 30px;
-  width: 150px;
-}
-  .btn-login:hover{
+  
+  .blueWolox{
+    color: #00A9E5;
+  }
+  
+  .btn-followus{
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid  #00A9E5;
+  }
+    .btn-followus:hover{
+      background-color: #00A9E5;
+    }
+  
+  .btn-footer,.btn-form, .btn-tch{
     background-color: #2AA7DF;
+    border: 2px solid  #2AA7DF;
+    margin-bottom: 15%;
+    align-items: center;
+  }
+    .btn-footer:hover, .btn-form:hover, .btn-tch:hover{
+      background-color: transparent;
+      color: #2AA7DF;
+    }
+  
+  .btn-form{
+    margin: 5% 0 2% 2%;
+    width: 220px;
+  }
+
+  .btn-tch{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn-tch2{
+    background-color: #FFFFFF;
+    border: 2px solid  #2AA7DF;
+    color: #2AA7DF;
+    display: block;
+    margin: 0 auto;
+  }
+   .btn-tch2:hover{
+    background-color: #2AA7DF;
+    color: #FFFFFF;
+  }
+  .btn-disabled{
+    background-color: grey;
+    border: 2px solid  grey;
+    margin-bottom: 15%;
+    margin: 5% 0 2% 2%;
+    width: 220px;
+  }
+  
+  .btn-login{
+    background-color: transparent;
+    border: 1px solid  #2AA7DF;
+    color: #2AA7DF;
+    border-radius: 30px;
+  }
+    .btn-login:hover{
+      background-color: #2AA7DF;
+      color: white;
+    }
+  
+  .burguer{
+    display: block;
+    background-color: transparent;
+    border: none; 
+  }
+  
+  .burguer-icon{
+    width: 30px;
+  }
+
+  .container {
+    align-content: center;
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15%;
+    max-width: 280px;
+  }
+  
+  .col-2, .col-5, .col-7 {
+    position: relative;
+    width: 100%;
+  }
+  
+  .col-2 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .col-5, .col-7 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .col-6{
+    position: relative;
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%; 
+  }
+
+  .card{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 2%;
+    padding: 2%;
+  }
+   
+  .danger{
+    color: red;
+    padding-left: 2%;
+  }
+
+  .fit{
+    height: 50%;
+  }
+  
+  .formbox{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 2%;
+  }
+  
+  .green{
+    color: #A3CC39;
+  }
+  
+  .greenWolox{
+    color: #97CF00;
+  }
+  
+  .hero-img{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    height: 100%;
+    padding: 5%;
+    transform: scaleX(-1);
+  }
+  
+  .img-container{
+    height: 300px;
+    display: block;
+    margin: 5% ;
+  }
+
+  .img-logo{
+    height: 25px;
+    margin: 2% 0;
+  }
+  
+  .img-size{
+    height: 50px;
+  }
+
+  .items{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo{
+    height: 100%;
+    margin-left: 2%;
+  }
+  
+  .logos-container{
+    display: flex;
+    height: 16%;
+    align-items: center;
+    align-content: center;
+  }
+
+  .data-container{
+    height: 70%;
+    padding-top: 2%;
+  }
+
+  .main-title{
+    padding: 12% 30% 12% 10%;
+  }
+  
+  .msg{
+    margin: 0;
+  }
+
+  .nav-scroll{
+    margin: 1% auto !important;
+  }
+
+  .nav-white{
+    background-color: white !important;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu{
+    position: relative;
+    display: none;
+    float: right;
+  }
+  
+  .menu-item{
+    display: block;
+    text-decoration: none;
+    padding: auto 5%;
+  }
+   .menu-item:hover,.menu-item:active{
+    text-decoration: underline;
+   }
+  
+  .tw{
+    height: 20px; 
+  }
+
+  .tw-txt{
     color: white;
   }
 
+  .wlx1{
+    background-image: url('./Backgrounds/img_woloxer@3x.png');
+    background-size: cover;
+    padding: 5% 0;
+    text-align: center;
+  }
+  
+  .wlx2{
+    align-items: center;
+    background-color: #F2F5FA;
+    padding: 5% 0%;
+    text-align: center;
+  }
+  
+  .wolox-footer{
+    margin-bottom: 7%;
+  }
+  
+  .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
-.container {
-  align-content: center;
-  align-items: center;
-  display: block;
-  flex-direction: column;
-  flex-wrap: wrap;
-  max-width: 1200px;
 }
 
-.col-2, .col-5, .col-6, .col-7 {
-  position: relative;
-  width: 100%;
+@media(min-width: 700px){
+
+  .burguer{
+    margin-top: 2%;
+    float: right;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 730px;
+  }
+
+  .col-2 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card{
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .img-container{
+    height: 400px;
+    margin-top: 0;
+    margin-left: 20%;
+  }
+   
+  .menu-item{
+    text-decoration: none;
+    padding: 1% 5%;
+  }
+   .menu-item:hover,.menu-item:active{
+    text-decoration: underline;
+   }
+
 }
 
-.col-2 {
-  flex: 0 0 16.666667%;
-  max-width: 16.666667%;
-}
+@media(min-width: 1200px){
 
-.col-5 {
-  flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-}
+  .container {
+    max-width: 1140px;
+  }
 
-.col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
+  .col-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
 
-.col-7 {
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
-}
+  .col-5 {
+    flex: 0 0 41.666667%; 
+    max-width:  41.666667%;
+  }
+  
+  .col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
 
-.danger{
-  color: red;
-  padding-left: 2%;
-}
+  }
 
-.formbox{
-  background-color: white;
-  border: 1px solid grey;
-  border-radius: 30px;
-  padding: 2%;
-}
+  .card{
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
 
-.green{
-  color: #A3CC39;
-}
+  .img-container{
+    margin-top: 5%;
+    margin-left: 0;
+  }
 
-.greenWolox{
-  color: #97CF00;
-}
-
-.hero-img{
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  height: 100%;
-  padding: 5%;
-  transform: scaleX(-1);
-}
-
-.img-container{
-  height: 400px;
-  margin-bottom: 10%;
-}
-
-.items{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.logo{
-  height: 33%;
-  margin: 2%;
-}
-
-.main-title{
-  padding: 12% 30% 12% 10%;
-}
-
-.menu{
-  display: flex;
-  right: 0;
-  padding: 2% 0 0 7%;  
-}
-
-.menu-item{
-  text-decoration: none;
-  padding: 2% 4%;
-}
- .menu-item:hover,.menu-item:active{
-  text-decoration: underline;
- }
-
-.wlx1{
-  background-image: url('./Backgrounds/img_woloxer@3x.png');
-  background-size: cover;
-  padding: 5% 0;
-  text-align: center;
-}
-
-.wlx2{
-  align-items: center;
-  background-color: #F2F5FA;
-  padding: 5% 0%;
-  text-align: center;
-}
-
-.wolox-footer{
-  margin-bottom: 7%;
-}
-
-.wrapper {
-  display: flex;
-  width: 100%;
+  .img-logo{
+    margin: auto 0;
+  }
+  
+  .menu {
+    display: flex;
+  }
 }

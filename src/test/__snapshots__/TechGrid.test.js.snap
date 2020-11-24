@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con <TechGrid /> Debe mostrarse correctamente cuando se muestran los ítems 1`] = `
+<Fragment>
+  <div
+    className="wrapper"
+  >
+    <TechGridItem
+      author="Ryan Dahl"
+      favorites={null}
+      handleFavorites={[Function]}
+      key="Node"
+      language="JavaScript"
+      license="MIT"
+      logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"
+      setFavorites={[Function]}
+      tech="Node"
+      type="Back-End"
+      year="2009"
+    />
+    <TechGridItem
+      author="Jordan Walke"
+      favorites={null}
+      handleFavorites={[Function]}
+      key="React"
+      language="JavaScript"
+      license="MIT"
+      logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/220px-React-icon.svg.png"
+      setFavorites={[Function]}
+      tech="React"
+      type="Front-End"
+      year="2013"
+    />
+    <TechGridItem
+      author="Evan You"
+      favorites={null}
+      handleFavorites={[Function]}
+      key="Vue"
+      language="JavaScript"
+      license="MIT"
+      logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/220px-Vue.js_Logo_2.svg.png"
+      setFavorites={[Function]}
+      tech="Vue"
+      type="Front-End"
+      year="2014"
+    />
+  </div>
+  <div>
+    <p>
+      Total de tecnologías: 
+      3
+    </p>
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas con <TechGrid /> Debe mostrarse correctamente mientras se consiguen los ítems 1`] = `
+<Fragment>
+  <p>
+    Loading
+  </p>
+  <div
+    className="wrapper"
+  />
+  <div>
+    <p>
+      Total de tecnologías: 
+      0
+    </p>
+  </div>
+</Fragment>
+`;
