@@ -172,7 +172,7 @@ export const Form = ({ setHome, setMsg }) => {
                                         aria-required="true"
                                         aria-describedby = "expDesc"
                                     />
-                                    <span id="expDesc" className="blue">Incluye una mayúscula, números y mínimo 6 caracteres.</span>
+                                    <span id="expDesc" className="blue">Incluye mínimo una letra, un número y mínimo 6 caracteres.</span>
                                 </div>
                                 <div>
                                     <label htmlFor = "password2">Repetí la Contraseña:</label>
